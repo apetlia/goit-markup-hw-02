@@ -11,6 +11,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 
+  background-color: var(--main-bg-color);
   color: var(--text-color);
 }
 
@@ -23,10 +24,6 @@ body {
 }
 
 /* ------------------ HEADER ------------------*/
-
-.header {
-  background: #ffffff;
-}
 
 .header-logo {
   font-family: 'Raleway';
@@ -92,21 +89,19 @@ body {
 }
 
 .hero-btn {
-  background-color: var(--btn-bg-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
+  cursor: pointer;
+
+  background-color: var(--btn-bg-color);
   color: #ffffff;
 }
 
 /* ------------------ PRIOTITIES ------------------*/
-
-.priorities {
-  background-color: var(--main-bg-color);
-}
 
 .priorities-title {
   font-size: 14px;
@@ -125,10 +120,6 @@ body {
 }
 
 /* ------------------ OUR WORK ------------------*/
-
-.works {
-  background-color: var(--main-bg-color);
-}
 
 .works-title {
   font-size: 36px;
@@ -208,4 +199,11 @@ body {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-mail:hover,
+.address-mail:focus,
+.address-tel:hover,
+.address-tel:focus {
+  color: var(--accent-color);
 }
