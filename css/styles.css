@@ -23,6 +23,19 @@ body {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ------------------ HEADER ------------------*/
 
 .header-logo {
@@ -96,6 +109,7 @@ body {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+  border: none;
 
   background-color: var(--btn-bg-color);
   color: #ffffff;
@@ -200,4 +214,42 @@ body {
 .address-item .link:hover,
 .address-item .link:focus {
   color: var(--accent-color);
+}
+
+/* ------------------PORTFOLIO ------------------*/
+
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+  border: none;
+
+  color: var(--title-color);
+  background-color: var(--second-bg-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+.project-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
 }
