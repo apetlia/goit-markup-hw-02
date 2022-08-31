@@ -186,24 +186,18 @@ body {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
+}
 
+.address-google {
   color: #ffffff;
 }
 
 .address-mail,
 .address-tel {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-mail:hover,
-.address-mail:focus,
-.address-tel:hover,
-.address-tel:focus {
+.address-item .link:hover,
+.address-item .link:focus {
   color: var(--accent-color);
 }
